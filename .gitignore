@@ -1,0 +1,31 @@
+# Build output
+target/
+build/
+out/
+
+# Kotlin
+.kotlin/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+*.swp
+*.bak

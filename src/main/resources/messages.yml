@@ -1,0 +1,76 @@
+# ============================================================
+# All Items Plugin - Messages
+# Placeholders: {player} {item} {collected} {total} {percent}
+#              {rank} {page} {max_pages} {found} {search}
+#              {material} {count} {mode}
+# ============================================================
+
+chat:
+  item-collected: "&a&l[All Items] &eNew item collected: &f{item}"
+  item-collected-progress: "&7Progress: &b{collected}&7/&b{total} &7(&b{percent}%&7)"
+  item-collected-multiplayer: "&a&l[All Items] &e{player} found: &f{item}"
+  item-collected-multiplayer-progress: "&7Shared progress: &b{collected}&7/&b{total} &7(&b{percent}%&7)"
+  all-collected-border: "&6&l========================================"
+  all-collected-broadcast: "&a&l{player} has collected ALL items!"
+  all-collected-broadcast-multiplayer: "&a&lThe server has collected ALL items!"
+  search-enter: "&e&l[Search] &7Enter your search term in chat:"
+  search-hint: "&7Type &ereset &7to clear the search"
+  search-reset: "&a&l[Search] &7Search has been reset!"
+  search-result: "&a&l[Search] &7Searching for: &e{search}"
+
+commands:
+  only-players: "&cOnly players can use this command!"
+  help-header: "&6&l=== All Items Plugin ==="
+  help-gui: "&e/allitems gui &7- Opens the item GUI"
+  help-search: "&e/allitems search <term> &7- Search for items"
+  help-progress: "&e/allitems progress &7- Shows your progress"
+  help-missing: "&e/allitems missing &7- Shows missing items"
+  help-reset: "&e/allitems reset &7- Resets your progress"
+  help-top: "&e/allitems top &7- Shows top 10 players"
+  search-no-term: "&cPlease provide a search term!"
+  progress-header: "&6&l=== Your Progress ==="
+  progress-collected: "&eCollected: &b{collected}&7/&b{total}"
+  progress-percent: "&eCompleted: &b{percent}%"
+  missing-header: "&6&l=== Missing Items ({count}) ==="
+  missing-item: "&7- &f{item}"
+  missing-more: "&7... and {count} more"
+  reset-done: "&c&lYour progress has been reset!"
+  top-header: "&6&l=== Top 10 Players ==="
+  top-entry: "&e#{rank} &f{player} &7- &b{collected} &7(&b{percent}%&7)"
+  top-unknown-player: "Unknown"
+
+gui:
+  title: "&6&lAll Items - Page &e{page}"
+
+  item-collected-name: "&a{item}"
+  item-collected-lore-status: "&7Status: &aCollected ✓"
+
+  item-missing-name: "&c{item}"
+  item-missing-lore-status: "&7Status: &cNot collected ✗"
+  item-missing-lore-material: "&7Material: &f{material}"
+
+  prev-page: "&e← Previous Page"
+  next-page: "&eNext Page →"
+
+  filter-name: "&d&lFilter: &f{mode}"
+  filter-lore-click: "&7Click to change"
+  filter-mode-all: "All Items"
+  filter-mode-collected: "Collected"
+  filter-mode-missing: "Missing"
+  filter-lore-all: "&7  All Items"
+  filter-lore-all-active: "&e▶ &fAll Items"
+  filter-lore-collected: "&7  Collected"
+  filter-lore-collected-active: "&e▶ &aCollected"
+  filter-lore-missing: "&7  Missing"
+  filter-lore-missing-active: "&e▶ &cMissing"
+
+  search-name: "&b&lSearch"
+  search-lore-click: "&7Click to search"
+  search-lore-current: "&7Current: &e{search}"
+  search-lore-found: "&7Found: &b{found} items"
+
+  info-name: "&6&lYour Progress"
+  info-lore-collected: "&7Collected: &b{collected}&7/&b{total}"
+  info-lore-percent: "&7Progress: &b{percent}%"
+  info-lore-displayed: "&7Displayed: &e{found} items"
+  info-lore-page: "&7Page: &e{page}&7/&e{max_pages}"

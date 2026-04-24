@@ -1,0 +1,3 @@
+# If true, all players share the same item collection progress
+# If false, each player collects items individually
+multiplayer: false

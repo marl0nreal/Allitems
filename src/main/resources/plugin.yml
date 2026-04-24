@@ -1,0 +1,7 @@
+name: Allitems
+version: '${project.version}'
+main: me.marlonreal.allitems.Allitems
+api-version: '1.21'
+authors: [ marlonreal ]
+commands:
+  allitems:
