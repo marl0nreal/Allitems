@@ -6,7 +6,14 @@ import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
 
 public class Manager {
 
@@ -44,7 +51,8 @@ public class Manager {
         if (name.equals("BEDROCK") || name.equals("END_PORTAL_FRAME") || name.equals("END_PORTAL") ||
                 name.equals("NETHER_PORTAL") || name.equals("END_GATEWAY") || name.equals("SPAWNER") ||
                 name.equals("REINFORCED_DEEPSLATE") || name.equals("VAULT") ||
-                name.equals("TRIAL_SPAWNER")) return false;
+                name.equals("TRIAL_SPAWNER") ||
+                name.equals("CHORUS_PLANT") || name.equals("FROGSPAWN") || name.equals("BUDDING_AMETHYST")) return false;
         if (name.equals("FARMLAND") || name.equals("DIRT_PATH") || name.equals("FROSTED_ICE")) return false;
         if (name.endsWith("_FIRE") || name.equals("WATER") || name.equals("LAVA")) return false;
         if (name.equals("LIGHT") || name.equals("JIGSAW") || name.equals("DEBUG_STICK") ||

@@ -6,7 +6,7 @@
 
     <groupId>me.marlonreal</groupId>
     <artifactId>Allitems</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <packaging>jar</packaging>
 
     <name>Allitems</name>
