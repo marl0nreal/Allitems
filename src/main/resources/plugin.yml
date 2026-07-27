@@ -1,0 +1,18 @@
+name: Allitems
+version: '${project.version}'
+main: me.marlonreal.allitems.Allitems
+api-version: '1.21.11'
+description: A polished survival challenge for collecting every obtainable item.
+authors: [marlonreal]
+prefix: All Items
+
+commands:
+  allitems:
+    description: Opens and manages the All Items challenge
+    usage: /allitems <gui|search|progress|missing|reset|top|reload>
+    aliases: [ai]
+
+permissions:
+  allitems.admin:
+    description: Allows reloading the All Items configuration
+    default: op

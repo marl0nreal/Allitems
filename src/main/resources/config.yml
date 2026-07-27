@@ -1,0 +1,37 @@
+# ============================================================
+# All Items - Configuration
+# ============================================================
+
+# If true, every player contributes to one shared collection.
+# If false, each player has an individual collection.
+multiplayer: false
+
+ordered-collection:
+  # Require items in a randomly generated order.
+  # The random order is stored in collection-order.yml.
+  # Items obtained before their turn are ignored and must be obtained again.
+  enabled: false
+
+bossbar:
+  # Shows the next required item at the top of the screen.
+  # The bossbar is only displayed while ordered-collection is enabled.
+  enabled: true
+
+  # Available placeholders:
+  # {item}, {material}, {position}, {collected}, {total}, {percent}
+  title: "&6&lNEXT ITEM &8» &e{item} &7({position}/{total})"
+
+  # Colors: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+  color: YELLOW
+
+  # Styles: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+  style: SOLID
+
+  # true: bar fill represents total collection progress
+  # false: bar is always completely filled
+  show-progress: true
+
+storage:
+  # Saves collection progress automatically at this interval.
+  # Set to 0 to disable automatic saving. Data is still saved on quit/shutdown.
+  autosave-interval-seconds: 300
